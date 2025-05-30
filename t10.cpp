@@ -25,7 +25,7 @@ void totalVotes()
         {
             sum+=a[i][j];
         } 
-        cout<<"Candidate "<<i+1<<" has "<<sum<<" votes \n"; 
+        cout<<"Candidate "<<i+1<<" has TOTAL "<<sum<<" votes \n"; 
         candidate[i]=sum;
     } 
      // total votes for each station 
