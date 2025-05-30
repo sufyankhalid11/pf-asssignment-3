@@ -9,7 +9,7 @@ void input()
     for(int j=0;j<6;j++)
     {
       while(1){
-      cout<<"Enter score of quiz(from 1 to 10) round "<<i+1<<" of team "<<j+1<<" : ";
+      cout<<"Enter score(from 1 to 10) of quiz round "<<i+1<<" of team "<<j+1<<" : ";
       cin>>a[i][j];
       if(a[i][j]<0 || a[i][j]>10)
       {
@@ -48,7 +48,7 @@ void winner(){
   }
   cout<<"winner team is "<<winteam<<" with score of "<<win<<endl;
   int runnerup=0;
-  int runnerteam=0;
+  int runnerteam=1;
   for(int i=0;i<6;i++){
     if(TotalScoreEachTeam[i]>runnerup && TotalScoreEachTeam[i]<win)
     {
